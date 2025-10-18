@@ -9,7 +9,7 @@ resource "aws_instance" "morrisons" {
     tags = merge(
         {
         Name = each.key
-        createdby = "Kithu"
+        Createdby = "Kithu"
         },var.common_tags
       )
   
