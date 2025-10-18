@@ -3,6 +3,11 @@ output "instance_address" {
   
 }
 
+output "instance_ips" {
+    value = aws_instance.db[*].public_ip
+  
+}
+
 ####-----------------------------------------------------------------
 # output "instance_address" {
 #     value = aws_instance.db[1].public_ip
